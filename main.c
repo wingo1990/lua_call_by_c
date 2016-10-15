@@ -16,7 +16,9 @@ int l_bar(lua_State *L)
         }
         len++;
     }
+    printf("xxxxx\n");
     lua_pushstring(L, str);
+    printf("yyyyyyy\n");
     lua_pushnumber(L, len);
     return 2;
 }
@@ -53,5 +55,7 @@ int main()
     int x = lua_tonumber(L, -1);
     printf ("x = %d\n", x);
 
+    lua_close(L);
+    
     return 0;
 }

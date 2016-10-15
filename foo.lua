@@ -5,7 +5,6 @@ foo = function (str)
     local t = {}
     t[s] = len;
     t[s2] = len2;
-
     return t
 end
 
